@@ -33,13 +33,42 @@
                 </div>
                 <div class="carousel-cell c5"
                     style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/touch-screen.jpg');    background-size:cover;">
-                    <div class="container">Technology</div></div>
+                    <div class="container">Technology</div>
                 </div>
             </div>
-            <script src="https://kit.fontawesome.com/8aae2ce4b1.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-            <script src="vendor/js/flickity.pkgd.min.js"></script>
-            <script src="js/script.js"></script>
+        </div>
+        <div class="container-map">
+            <h3>Warsaw City</h3>
+            <!--The div element for the map -->
+            <div id="map"></div>
+            <p id='infos'></p>
+        </div>
+        <script src="https://kit.fontawesome.com/8aae2ce4b1.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/js/flickity.pkgd.min.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ-UZ64OR6ZCKc62QjYzFKxx3TPC1HwEA&callback=initMap">
+        </script>
+        <script src="js/script.js"></script>
+        <script>
+            var productsData = [{
+                    name: 'Football',
+                    price: '$10',
+                    coords:{ lat: 52.237049, lng: 21.017532 }
+                },
+                {
+                    name: 'Volleyball',
+                    price: '$8',
+                    coords:{ lat: 53.488415, lng: 9.142274 }
+
+                },
+                {
+                    name: 'Basketball',
+                    price: '$12',
+                    coords:{ lat: 51.456600, lng: 0.105600 }
+                }
+            ];
+        </script>
     </body>
 
 </html>
