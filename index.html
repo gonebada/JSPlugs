@@ -49,23 +49,54 @@
         <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ-UZ64OR6ZCKc62QjYzFKxx3TPC1HwEA&callback=initMap">
         </script>
-        <script src="js/script.js"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+        <script src="js/mustache.js" type="text/javascript"></script>
         <script>
-            var productsData = [{
-                    name: 'Football',
-                    price: '$10',
-                    coords:{ lat: 52.237049, lng: 21.017532 }
+            var objects = [{
+                    img: '',
+                    title: 'Warsaw',
+                    description: 'Nice City',
+                    coords: {
+                        lat: 52.237049,
+                        lng: 21.017532
+                    }
                 },
                 {
-                    name: 'Volleyball',
-                    price: '$8',
-                    coords:{ lat: 53.488415, lng: 9.142274 }
+                    image: 'Germany',
+                    title: 'Germany',
+                    description: 'Old City',
+                    coords: {
+                        lat: 53.488415,
+                        lng: 9.142274
+                    }
 
                 },
                 {
-                    name: 'Basketball',
-                    price: '$12',
-                    coords:{ lat: 51.456600, lng: 0.105600 }
+                    image: '',
+                    title: 'Loved City',
+                    description: ' Loved City',
+                    coords: {
+                        lat: 51.456600,
+                        lng: 0.105600
+                    }
+                },
+                {
+                    image: '',
+                    title: 'Los Angeles',
+                    description: 'Golden Gate Bridge',
+                    coords: {
+                        lat: 37.818496726,
+                        lng: -122.473831438
+                    }
+                },
+                {
+                    image: '',
+                    title: 'Australia',
+                    description: 'Sydney',
+                    coords: {
+                        lat: -33.865143,
+                        lng: 151.209900
+                    }
                 }
             ];
         </script>
